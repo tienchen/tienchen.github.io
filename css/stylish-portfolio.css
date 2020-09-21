@@ -19,8 +19,8 @@ body {
 }
 
 .content-section {
-  padding-top: 7.5rem;
-  padding-bottom: 7.5rem;
+  padding-top: 1rem;
+  padding-bottom: 5rem;
 }
 
 .content-section-heading h2 {
@@ -65,13 +65,14 @@ h6 {
   right: 15px;
   bottom: 15px;
   display: none;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   text-align: center;
-  color: white;
-  background: rgba(52, 58, 64, 0.5);
-  line-height: 45px;
+  color: black;
+  background: #fff;
+  line-height: 40px;
 }
+
 
 .scroll-to-top:focus, .scroll-to-top:hover {
   color: white;
@@ -86,31 +87,36 @@ h6 {
 }
 
 .masthead {
-  min-height: 30rem;
+  min-height: 5rem;
   position: relative;
   display: table;
   width: 100%;
-  height: auto;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/bg-masthead.jpg");
+  /* height: auto; */
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .masthead h1 {
-  font-size: 4rem;
+  font-size: 2.0rem;
   margin: 0;
-  padding: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.masthead a {
+  color: #000;
+}
+
+.masthead a:hover {
+  color: #000;
 }
 
 @media (min-width: 992px) {
-  .masthead {
-    height: 100vh;
-  }
   .masthead h1 {
-    font-size: 5.5rem;
+    font-size: 1.75rem;
   }
 }
 
@@ -123,8 +129,8 @@ h6 {
   height: 100%;
   transition: all 0.4s ease 0s;
   transform: translateX(250px);
-  background: #1D809F;
-  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  background: #FFFFFF;
+  /* border-left: 1px solid rgba(173, 179, 180, 0.9); */
 }
 
 .sidebar-nav {
@@ -137,16 +143,26 @@ h6 {
 }
 
 .sidebar-nav li.sidebar-nav-item a {
+  font-size: 1.2rem;
   display: block;
   text-decoration: none;
-  color: #fff;
+  color: #000000;
   padding: 15px;
+}
+
+.sidebar-nav li.sidebar-nav-subitem a {
+  display: block;
+  text-decoration: none;
+  color: #000000;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 45px;
 }
 
 .sidebar-nav li a:hover {
   text-decoration: none;
   color: #fff;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(37, 36, 36, 0.2);
 }
 
 .sidebar-nav li a:active,
@@ -156,16 +172,16 @@ h6 {
 
 .sidebar-nav > .sidebar-brand {
   font-size: 1.2rem;
-  background: rgba(52, 58, 64, 0.1);
-  height: 80px;
+  background: rgba(173, 179, 180, 0.9);
+  height: 50px;
   line-height: 50px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 1px;
+  padding-bottom: 1px;
   padding-left: 15px;
 }
 
 .sidebar-nav > .sidebar-brand a {
-  color: #fff;
+  color: #000000;
 }
 
 .sidebar-nav > .sidebar-brand a:hover {
@@ -183,48 +199,26 @@ h6 {
   position: fixed;
   right: 15px;
   top: 15px;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
+  margin: 10px;
   text-align: center;
-  color: #fff;
-  background: rgba(52, 58, 64, 0.5);
-  line-height: 50px;
+  color: #000;
+  background: #fff;
+  line-height: 40px;
   z-index: 999;
 }
 
-.menu-toggle:focus, .menu-toggle:hover {
-  color: #fff;
+.menu-toggle:focus {
+  color: #000;
+  background: transparent;
 }
 
 .menu-toggle:hover {
   background: #343a40;
+  color: #fff;
 }
 
-.service-icon {
-  background-color: #fff;
-  color: #1D809F;
-  height: 7rem;
-  width: 7rem;
-  display: block;
-  line-height: 7.5rem;
-  font-size: 2.25rem;
-  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
-}
-
-.callout {
-  padding: 15rem 0;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/bg-callout.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.callout h2 {
-  font-size: 3.5rem;
-  font-weight: 700;
-  display: block;
-  max-width: 30rem;
-}
 
 .portfolio-item {
   display: block;
@@ -238,7 +232,6 @@ h6 {
   display: flex;
   height: 100%;
   width: 100%;
-  background-color: rgba(33, 37, 41, 0.2);
   position: absolute;
   top: 0;
   bottom: 0;
@@ -247,23 +240,28 @@ h6 {
 
 .portfolio-item .caption .caption-content {
   color: #fff;
-  margin: auto 2rem 2rem;
+  margin: auto 1rem 1rem;
 }
 
-.portfolio-item .caption .caption-content h2 {
-  font-size: 0.8rem;
+.portfolio-item .caption .caption-content .h2 {
+  font-size: 1.5rem;
   text-transform: uppercase;
+  opacity: 0;
 }
 
 .portfolio-item .caption .caption-content p {
   font-weight: 300;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  opacity: 0;
+
 }
+
 
 @media (min-width: 992px) {
   .portfolio-item {
     max-width: none;
-    margin: 0;
+    margin: 0.5rem;
+
   }
   .portfolio-item .caption {
     transition: background-color 0.7s, -webkit-clip-path 0.25s ease-out;
@@ -273,33 +271,61 @@ h6 {
     clip-path: inset(0px);
   }
   .portfolio-item .caption .caption-content {
-    transition: opacity 0.25s;
-    margin-left: 5rem;
-    margin-right: 5rem;
-    margin-bottom: 5rem;
+    transition: opacity 0.75s;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
   }
+
   .portfolio-item img {
     transition: -webkit-clip-path 0.25s ease-out;
     transition: clip-path 0.25s ease-out;
     transition: clip-path 0.25s ease-out, -webkit-clip-path 0.25s ease-out;
     -webkit-clip-path: inset(-1px);
     clip-path: inset(-1px);
+    object-fit: cover;
+    object-position: 50% 50%;
+    width: 700px;
+    height: 300px;
   }
   .portfolio-item:hover img {
-    -webkit-clip-path: inset(2rem);
-    clip-path: inset(2rem);
+    -webkit-clip-path: inset(1rem);
+    clip-path: inset(1rem);
   }
   .portfolio-item:hover .caption {
-    background-color: rgba(29, 128, 159, 0.9);
-    -webkit-clip-path: inset(2rem);
-    clip-path: inset(2rem);
+    background-color: rgba(117, 124, 126, 0.6);
+    -webkit-clip-path: inset(1rem);
+    clip-path: inset(1rem);
+
   }
+  .portfolio-item:hover .caption .caption-content .h2{
+    opacity: 1;
+  }
+  .portfolio-item:hover .caption .caption-content p{
+    opacity: 1;
+  }
+
 }
 
-.map iframe {
-  height: 100%;
-  width: 100%;
-  border: 0;
+.model-img {
+  max-width: none;
+  margin: 0.5rem;
+
+} 
+
+.hidden {
+  visibility: hidden;
+}
+
+.fadein {
+  -webkit-animation: animat_show 0.8s;
+  animation: animat_show 0.8s;
+  visibility: visible !important;
+}
+
+@-webkit-keyframes animat_show{
+  0%{opacity:0}
+  100%{opacity:1}
 }
 
 footer.footer {
