@@ -309,9 +309,54 @@ h6 {
 
 .model-img {
   max-width: none;
-  margin: 0.5rem;
-
+  margin-bottom: 100px;
 } 
+
+.model-text {
+  margin-top: 25px;
+  margin-bottom: 125px;
+}
+.model-text h5, .model-text p {
+  text-align: center;
+  width: 50%;
+  margin-left: 25%;
+}
+
+.about-img {
+  margin: 50px;
+}
+
+.about-img img{
+  border-radius: 50%;
+
+}
+
+.about-text {
+  margin-top: 75px;
+  margin-bottom: 50px;
+}
+.about-text h5, .model-text p {
+  text-align: left;
+  width: 50%;
+}
+
+.about-img button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  background-color: white;
+  color: red;
+  border: 2px solid red;
+  font-size: 1.25rem;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.about-img button:hover {
+  background-color: red;
+  color: white;
+}
 
 .hidden {
   visibility: hidden;
@@ -323,7 +368,7 @@ h6 {
   visibility: visible !important;
 }
 
-@-webkit-keyframes animat_show{
+@-webkit-keyframes animat_show {
   0%{opacity:0}
   100%{opacity:1}
 }
