@@ -71,7 +71,7 @@
           <div class="col-lg-4">
             <div class="about-img">
               <img class="img-fluid hidden" src="img/IMG_1084.jpg" alt="">
-              <button type="button">Contact</button>
+              <button class="contact">Contact</button>
             </div>
           </div> 
           <div class="col-lg-3">
@@ -99,6 +99,29 @@
       </div>
     </section>
 
+    <div class="form-popup" id="contactForm">
+      <form action="/action_page.php" class="form-container">
+        <h5>Hello! Let's work together.</h5>
+    
+        <label for="name"><b>Name *</b></label>
+        <input type="text" placeholder="First and Last Name" name="name" required>
+    
+        <label for="email"><b>Email *</b></label>
+        <input type="text" name="email" required>
+
+        <label for="phone"><b>Phone</b></label>
+        <input type="number" name="phone">
+    
+        <label for="subject"><b>Subject *</b></label>
+        <input type="text" name="sub">
+
+        <label for="description"><b>Project Description *</b></label>
+        <input type="text" name="descr">
+
+        <button type="submit" class="btn">Login</button>
+        <button type="button" class="btn cancel">Close</button>
+      </form>
+    </div>
     <!-- Scroll to Top Button-->
     <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
       <i class="fas fa-angle-up"></i>

@@ -52,6 +52,14 @@
     });
   }
 
+  $('.contact').click(function openForm() {
+    document.getElementById("contactForm").style.display = "block";
+  });
+  
+  $('.cancel').click(function closeForm() {
+    document.getElementById("contactForm").style.display = "none";
+  });
+  
   // if the image in the window of browser when the page is loaded, show that image
   $(document).ready(function(){
           showImages('.hidden');
@@ -83,3 +91,4 @@ var onMapClickHandler = function(event) {
 }
 // Enable map zooming with mouse scroll when the user clicks the map
 $('.map').on('click', onMapClickHandler);
+
