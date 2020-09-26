@@ -448,7 +448,7 @@ a:hover, a:focus, a:active {
 
 /* The popup form - hidden by default */
 .form-popup {
-  display: block;
+  display: none;
   position: fixed;
   bottom:15px;
   right: 15px;
