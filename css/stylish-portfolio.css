@@ -12,6 +12,7 @@ html {
 
 body {
   font-family: 'Source Sans Pro';
+  width: 100%;
 }
 
 .btn-xl {
@@ -19,7 +20,7 @@ body {
 }
 
 .content-section {
-  padding-top: 1rem;
+  /* padding-top: 1rem; */
   padding-bottom: 5rem;
 }
 
@@ -30,6 +31,10 @@ body {
 .content-section-heading h3 {
   font-size: 1rem;
   text-transform: uppercase;
+}
+
+.container{
+  max-width: 95%;
 }
 
 h1,
@@ -69,17 +74,19 @@ h6 {
   height: 40px;
   text-align: center;
   color: black;
-  background: #fff;
+  background: transparent;
   line-height: 40px;
+  opacity: 50%;
 }
 
 
 .scroll-to-top:focus, .scroll-to-top:hover {
-  color: white;
+  color: #000;
 }
 
 .scroll-to-top:hover {
-  background: #343a40;
+  background: transparent;
+  opacity: 100%;
 }
 
 .scroll-to-top i {
@@ -92,6 +99,7 @@ h6 {
   display: table;
   width: 100%;
   /* height: auto; */
+  /* margin-top: 1rem; */
   padding-top: 1rem;
   padding-bottom: 1rem;
   background-position: center center;
@@ -201,12 +209,12 @@ h6 {
   top: 15px;
   width: 40px;
   height: 40px;
-  margin: 10px;
   text-align: center;
   color: #000;
-  background: #fff;
+  background-color:transparent;
   line-height: 40px;
   z-index: 999;
+  opacity: 50%;
 }
 
 .menu-toggle:focus {
@@ -215,8 +223,9 @@ h6 {
 }
 
 .menu-toggle:hover {
-  background: #343a40;
-  color: #fff;
+  background: transparent;
+  color: #000;
+  opacity: 100%;
 }
 
 
@@ -245,7 +254,7 @@ h6 {
 
 .portfolio-item .caption .caption-content .h2 {
   font-size: 1.5rem;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   opacity: 0;
 }
 
@@ -261,7 +270,6 @@ h6 {
   .portfolio-item {
     max-width: none;
     margin: 0.5rem;
-
   }
   .portfolio-item .caption {
     transition: background-color 0.7s, -webkit-clip-path 0.25s ease-out;
@@ -285,8 +293,8 @@ h6 {
     clip-path: inset(-1px);
     object-fit: cover;
     object-position: 50% 50%;
-    width: 700px;
-    height: 300px;
+    width: 800px;
+    height: 325px;
   }
   .portfolio-item:hover img {
     -webkit-clip-path: inset(1rem);
@@ -316,8 +324,14 @@ h6 {
   margin-top: 25px;
   margin-bottom: 125px;
 }
-.model-text h5, .model-text p {
+.model-text h5 {
   text-align: center;
+  width: 50%;
+  margin-left: 25%;
+}
+.model-text p {
+  text-align: justify;
+  text-align-last: center;
   width: 50%;
   margin-left: 25%;
 }
